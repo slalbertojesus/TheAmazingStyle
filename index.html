@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Página principal | Impacta con estilo.</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/pe-icons.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/ico/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/ico/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/ico/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" href="images/ico/apple-touch-icon-57x57.png">
+
+    <script type="text/javascript">
+    jQuery(document).ready(function($){
+	'use strict';
+      	jQuery('body').backstretch([
+	        "images/bg/bg1.jpeg",
+	        "images/bg/bg2.png",
+	        "images/bg/bg3.jpg",
+	        "images/bg/bg4.jpeg"
+	    ], {duration: 5000, fade: 500, centeredY: true });
+
+		$("#mapwrapper").gMap({ controls: false,
+         	scrollwheel: false,
+         	markers: [{
+              	latitude:40.7566,
+				longitude: -73.9863,
+          	icon: { image: "images/marker.png",
+              	iconsize: [44,44],
+          		iconanchor: [12,46],
+          		infowindowanchor: [12, 0] } }],
+          	icon: {
+              	image: "images/marker.png",
+             	iconsize: [26, 46],
+              	iconanchor: [12, 46],
+              	infowindowanchor: [12, 0] },
+         	latitude:40.7566,
+         	longitude: -73.9863,
+          	zoom: 14 });
+    });
+    </script>
+</head><!--/head-->
+
+
+<body>
+    <div id="preloader"></div>
+        <header class="navbar navbar-inverse navbar-fixed-top " role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="fa fa-bars"></i>
+                    </button>
+                     <a class="navbar-brand" href="index.html"><h1><span class="pe-7s-like bounce-in"></span> THE AMAZING STYLE</h1></a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about-us.html">Nosotros</a></li>
+                        <li><a href="services.html">Servicios</a></li>
+                        <li><a href="portfolio.html">Portafolio</a></li>
+                        <li><a href="contact-us.html">Contactanos</a></li>
+                        <li><span class="search-trigger"><i class="fa fa-search"></i></span></li>
+                    </ul>
+                </div>
+            </div>
+        </header><!--/header-->
+    
+        <section id="main-slider" class="no-margin">
+            <div class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="carousel-content center centered">
+                                        <h2 class="boxed animation animated-item-1 fade-down"> TE AYUDAMOS A IMPACTAR CON ESTILO
+                                        <p class="boxed animation animated-item-2 fade-up">Expertos en asesoría de imágen.</p>
+                                        <br>
+                                        <a class="btn btn-md animation bounce-in" href="#services">Me interesa</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--/.item-->
+                </div><!--/.carousel-inner-->
+            </div><!--/.carousel-->
+        </section><!--/#main-slider-->
+    
+        <div id="content-wrapper">
+            <section id="services" class="white">
+                <div class="container">
+                <div class="gap"></div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="center gap fade-down section-heading">
+                                <h2 class="main-title">Nuestros servicios</h2>
+                                <hr>
+                                <p>¿Que esperas para ser la mejor version de ti misma?</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-block">
+                                <div class="pull-left bounce-in">
+                                    <i class="fa fa-camera fa fa-md"></i>
+                                </div>
+                                <div class="media-body fade-up">
+                                    <h3 class="media-heading"> Maquillaje </h3>
+                                    <p> Te asesoramos de acuerdo a las tendencias recientes</p>
+                                </div>
+                            </div>
+                        </div><!--/.col-md-4-->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-block">
+                                <div class="pull-left bounce-in">
+                                    <i class="fa fa-thumbs-o-up fa fa-md"></i>
+                                </div>
+                                <div class="media-body fade-up">
+                                    <h3 class="media-heading"> Closet fix</h3>
+                                    <p>Te ayudamos a elegir tu closet y te asesoramos para que tengas un look fabuloso</p>
+                                </div>
+                            </div>
+                        </div><!--/.col-md-4-->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-block">
+                                <div class="pull-left bounce-in">
+                                    <i class="fa fa-ticket fa fa-md"></i>
+                                </div>
+                                <div class="media-body fade-up">
+                                    <h3 class="media-heading">Personal shopper</h3>
+                                    <p>Compra inteligente, compra lo que requieres y cómo realmente lo requieres..</p>
+                                </div>
+                            </div>
+                        </div><!--/.col-md-4-->
+                    </div><!--/.row-->
+                    <div class="gap"></div>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-block">
+                                <div class="pull-left bounce-in">
+                                    <i class="fa fa-star fa fa-md"></i>
+                                </div>
+                                <div class="media-body fade-up">
+                                    <h3 class="media-heading">Redes Sociales</h3>
+                                    <p> De acuerdo a las tendencias, te ayudamos a reconstruir tu imagen en redes sociales </p>
+                                </div>
+                            
+                <div class="gap"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="center gap fade-down section-heading">
+                                <h2 class="main-title"> NUESTRA EFECTIVIDAD</h2>
+                                <hr>
+                                <p> Para nosotros, los hechos son lo mas importante, por eso te mostramos nuestra tasa de efectividad en los ultimos dos años.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                <div class="row">
+                        <div class="col-md-3">
+                            <div class="tile-progress tile-red bounce-in">
+                                <div class="tile-header">
+                                    <h3> Maquillaje </h3>
+                                    <span> Somos los mejores en cambio de imagen en Mexico</span>
+                                </div>
+                                <div class="tile-progressbar">
+                                    <span data-fill="70% en efectividad" style="width: 70%;"></span>
+                                </div>
+                                <div class="tile-footer">
+                                    <h4>
+                                        <span class="pct-counter counter">85</span>%
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="tile-progress tile-cyan bounce-in">
+                                <div class="tile-header">
+                                    <h3> Closet fix</h3>
+                                    <span> Nuestas clientes lo respaldan.</span>
+                                </div>
+                                <div class="tile-progressbar">
+                                    <span data-fill="98.5%" style="width: 98.5%;"></span>
+                                </div>
+                                <div class="tile-footer">
+                                    <h4>
+                                        <span class="pct-counter counter">95</span>%
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="tile-progress stile-primary bounce-in">
+                                <div class="tile-header">
+                                    <h3>Personal Shopper</h3>
+                                    <span>Porque amamos comprar para ti.</span>
+                                </div>
+                                <div class="tile-progressbar">
+                                    <span data-fill="90%" style="width: 90%;"></span>
+                                </div>
+                                <div class="tile-footer">
+                                    <h4>
+                                        <span class="pct-counter counter">85</span>%
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="tile-progress tile-pink bounce-in">
+                                <div class="tile-header">
+                                    <h3> Redes Sociales</h3>
+                                    <span>Los mejores en todo México</span>
+                                </div>
+                                <div class="tile-progressbar">
+                                    <span data-fill="90" style="width: 90%;"></span>
+                                </div>
+                                <div class="tile-footer">
+                                    <h4>
+                                        <span class="pct-counter counter">95</span>%
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--/.row-->
+                    <div class="gap"></div>
+                </div>
+            </section>
+    
+    
+            <section id="single-quote" class="divider-section">
+                    <div class="container">
+                        <div class="gap"></div>
+                        <div class="row">
+                            <div class='col-md-offset-2 col-md-8 fade-up'>
+                                <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <blockquote>
+                                                <div class="row">
+                                                    <div class="col-sm-3 text-center">
+                                                        <img class="img-responsive" src="images/team/team1.jpg" style="width: 100px;height:100px;">
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        <p>"La relacion mas importante es la que tienes contigo misma"</p>
+                                                        <small>Rosshana Bracho, CEO de The amazing Style</small>
+                                                    </div>
+                                                </div>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gap"></div>
+                      </div>
+              </section>
+    
+            <section id="about-us" class="white">
+                <div class="container">
+                    <div class="gap"></div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="center gap fade-down section-heading">
+                                <h2 class="main-title">Un poco sobre nosotras:</h2>
+                                <hr>
+                                <p> Somos diferentes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1 fade-up">
+                            <p>The amazing Style nace de la mezcla de dos grandes pasiones: la moda y la comunicación.
+                                 Un espacio que muestra ante todo una actitud ante la vida, una forma diferente de ver
+                                  las cosas. Decía la mítica Coco Chanel que: «La moda no existe sólo en los vestidos.
+                                   La moda está en el cielo, en la calle, la moda tiene que ver con las ideas, la forma
+                                    en que vivimos, lo que está sucediendo«, y eso es precisamente lo que pretende 
+                                    mostrar esta pequeña ventana abierta al mundo.
+                                Aquí encontrarás lo nos inspira en la vida, consejos sobre moda y asesoría de imagen, 
+                                nuestra manera de descifrar las tendencias adaptándolas a cada personalidad y estilo. 
+                                Porque creo firmemente que la vida es demasiado corta como para vestir de manera aburrida.
+                                </p>   
+                        </div>
+                        <div class="col-md-4 fade-up">
+    
+                        </div>
+                    </div>
+                   <div class="gap"></div>
+                    <div class="row fade-up">
+                        <div class="col-md-6">
+                              
+    
+                    <div id="NUESTRO-EQUIPO" class="row">
+                        <div class="col-md-3 col-xs-6">
+                            <div class="center team-member">
+                                <div class="team-image">
+                                    <img class="img-responsive img-thumbnail bounce-in" src="images/team/team1.jpg" alt="">
+                                    <div class="overlay">
+                                        <a class="preview btn btn-outlined btn-primary" href="images/team/team1.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                                <div class="team-content fade-up">
+                                    <h5>Rosshana Bracho<small class="role muted"></h5>
+                                    <p>Ganadora de varios premios ELIOT como asesora de imagen.</p>
+                                    <a class="btn btn-social btn-facebook" href="#"><i class="fa fa-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="fa fa-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="fa fa-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-3 col-xs-6">
+                            <div class="center team-member">
+                                <div class="team-image">
+                                    <img class="imgb-responsive img-thumbnail bounce-in" src="images/team/team2.jpg" alt="">
+                                    <div class="overlay">
+                                        <a class="preview btn btn-outlined btn-primary" href="images/team/team2.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                                <div class="team-content fade-up">
+                                    <h5>Cassandra  de la vega<small class="role muted"></h5>
+                                    <p>Conductora de la cadena Mas chic.</p>
+                                    <a class="btn btn-social btn-facebook" href="#"><i class="fa fa-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="fa fa-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="fa fa-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-6">
+                            <div class="center team-member">
+                                <div class="team-image">
+                                    <img class="img-responsive img-thumbnail bounce-in" src="images/team/team3.jpg" alt="">
+                                    <div class="overlay">
+                                        <a class="preview btn btn-outlined btn-primary" href="images/team/team3.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                                <div class="team-content fade-up">
+                                    <h5>Tere Suarez<small class="role muted"></h5>
+                                    <p>Colaboradora de la marca par-pai.</p>
+                                    <a class="btn btn-social btn-facebook" href="#"><i class="fa fa-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="fa fa-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="fa fa-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-6">
+                            <div class="center team-member">
+                                <div class="team-image">
+                                    <img class="img-responsive img-thumbnail bounce-in" src="images/team/team4.jpg" alt="">
+                                    <div class="overlay">
+                                        <a class="preview btn btn-outlined btn-primary" href="images/team/team4.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                                <div class="team-content fade-up">
+                                    <h5>Nabile Ahumada<small class="role muted"></h5>
+                                    <p>Ganadora de premio ELIOT en la categoria instagramer.</p>
+                                    <a class="btn btn-social btn-facebook" href="#"><i class="fa fa-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="fa fa-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="fa fa-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--/#meet-the-team-->
+                    <div class="gap"></div>
+                    <div class="gap"></div>
+                </div>
+            </section>
+    
+            <section id="stats" class="divider-section">
+                <div class="gap"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-xs-6">
+                            <div class="center bounce-in">
+                                <span class="stat-icon"><span class="pe-7s-light bounce-in"></span></span>
+                                <h1><span class="counter">2500</span></h1>
+                                <h3>Casos de éxito</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-6">
+                            <div class="center bounce-in">
+                                <span class="stat-icon"><span class="pe-7s-like bounce-in"></span></span>
+                                <h1><span class="counter">6000</span></h1>
+                                <h3>Usuarias satisfechas</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-6">
+                            <div class="center bounce-in">
+                                <span class="stat-icon"><span class="pe-7s-shopbag bounce-in"></span></span>
+                                <h1><span class="counter">2500</span></h1>
+                                <h3>Guardarropas cambiados</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-6">
+                            <div class="center bounce-in">
+                                <span class="stat-icon"><span class="pe-7s-graph3 bounce-in"></span></span>
+                                <h1><span class="counter">15000</span></h1>
+                                <h3>Seguidores nuevos</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gap"></div>
+            </section>
+    
+            <section id="portfolio" class="white">
+                   <div class="container">
+                    <div class="gap"></div>
+                        <div class="center gap fade-down section-heading">
+                            <h2 class="main-title">Galeria</h2>
+                            <hr>
+                            <p>Nuestro trabajo impacta, queremos que lo veas tu misma.</p>
+                        </div>
+    <ul class="portfolio-filter fade-down center">
+                            <li><a class="btn btn-outlined btn-primary active" href="#" data-filter="*">Todo</a></li>
+                            <li><a class="btn btn-outlined btn-primary" href="#" data-filter=".apps">Maquillaje</a></li>
+                            <li><a class="btn btn-outlined btn-primary" href="#" data-filter=".nature">Closet Fix</a></li>
+                            <li><a class="btn btn-outlined btn-primary" href="#" data-filter=".design">Personal Shopper</a></li>
+                        </ul><!--/#portfolio-filter-->
+    
+                        <ul class="portfolio-items col-3 isotope fade-up">
+                            <li class="portfolio-item apps isotope-item">
+                                <div class="item-inner">
+                                    <img src="images/portfolio/portafolio1.jpg" alt="">
+                                    <h5>1</h5>
+                                    <div class="overlay">
+                                        <a class="preview btn btn-outlined btn-primary" href="images/portfolio/portafolio1.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </li><!--/.portfolio-item-->
+                            <li class="portfolio-item joomla nature isotope-item">
+                                <div class="item-inner">
+                                    <img src="images/portfolio/portafolio2.jpg" alt="">
+                                    <h5>2</h5>
+                                    <div class="overlay">
+                                        <a class="preview btn btn-outlined btn-primary" href="images/portfolio/portafolio2.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </li><!--/.portfolio-item-->
+                            <li class="portfolio-item bootstrap design isotope-item">
+                                <div class="item-inner">
+                                    <img src="images/portfolio/portafolio3.jpg" alt="">
+                                    <h5>3</h5>
+                                    <div class="overlay">
+                                        <a class="preview btn btn-outlined btn-primary" href="images/portfolio/portafolio3.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </li><!--/.portfolio-item-->
+                            <li class="portfolio-item joomla design apps isotope-item">
+                                <div class="item-inner">
+                                    <img src="images/portfolio/portafolio4.jpg" alt="">
+                                    <h5>4</h5>
+                                    <div class="overlay">
+                                        <a class="preview btn btn-outlined btn-primary" href="images/portfolio/portafolio4.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </li><!--/.portfolio-item-->
+                            <li class="portfolio-item joomla apps isotope-item">
+                                <div class="item-inner">
+                                    <img src="images/portfolio/portafolio5.jpg" alt="">
+                                    <h5>5</h5>
+                                    <div class="overlay">
+                                        <a class="preview btn btn-outlined btn-primary" href="images/portfolio/portafolio5.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </li><!--/.portfolio-item-->
+                            <li class="portfolio-item wordpress nature isotope-item">
+                                <div class="item-inner">
+                                    <img src="images/portfolio/portafolio6.jpg" alt="">
+                                    <h5>6</h5>
+                                    <div class="overlay">
+                                        <a class="preview btn btn-outlined btn-primary" href="images/portfolio/portafolio6.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </li><!--/.portfolio-item-->
+                            <li class="portfolio-item joomla design apps isotope-item">
+                                <div class="item-inner">
+                                    <img src="images/portfolio/portafolio7.jpg" alt="">
+                                    <h5>7</h5>
+                                    <div class="overlay">
+                                        <a class="preview btn btn-outlined btn-primary" href="images/portfolio/portafolio7.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </li><!--/.portfolio-item-->
+                            <li class="portfolio-item joomla nature isotope-item">
+                                <div class="item-inner">
+                                    <img src="images/portfolio/portafolio8.jpg" alt="">
+                                    <h5>8</h5>
+                                    <div class="overlay">
+                                        <a class="preview btn btn-outlined btn-primary" href="images/portfolio/portafolio8.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </li><!--/.portfolio-item-->
+                            <li class="portfolio-item wordpress design isotope-item">
+                                <div class="item-inner">
+                                    <img src="images/portfolio/portafolio9.jpg" alt="">
+                                    <h5>9</h5>
+                                    <div class="overlay">
+                                        <a class="preview btn btn-outlined btn-primary" href="images/portfolio/portafolio9.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </li><!--/.portfolio-item-->
+                        </ul>
+                    </div>
+                </section>
+    
+                <section id="testimonial-carousel" class="divider-section">
+                <div class="gap"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="center gap fade-down section-heading">
+                                <h2 class="main-title">Lo que han dicho de nosotros.</h2>
+                                <hr>
+                                <p>NUESTRAS CLIENTAS NOS RESPALDAN, PARA NOSOTRAS SU OPINION VALE MAS QUE OTRA COSA.</p>
+                                <div class="gap"></div>
+                            </div>
+                            <div class='col-md-offset-2 col-md-8 fade-up'>
+                                <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                                    <!-- Bottom Carousel Indicators -->
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#quote-carousel" data-slide-to="1"></li>
+                                        <li data-target="#quote-carousel" data-slide-to="2"></li>
+                                    </ol>
+                                    <!-- Carousel Slides / Quotes -->
+                                    <div class="carousel-inner">
+                                      <!-- Quote 1 -->
+                                        <div class="item active">
+                                            <blockquote>
+                                                <div class="row">
+                                                    <div class="col-sm-3 text-center">
+                                                        <img class="img-responsive" src="images/opinions/ejemplo1.jpg" style="width: 100px;height:100px;">
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        <p>The amazing style ha cambiado la forma de verme a mi misma, 
+                                                            me ha permitido darme cuenta que trabajar en mi misma es importante</p>
+                                                        <small>Mikhaela</small>
+                                                    </div>
+                                                </div>
+                                            </blockquote>
+                                        </div>
+                                        <!-- Quote 2 -->
+                                        <div class="item">
+                                            <blockquote>
+                                                <div class="row">
+                                                    <div class="col-sm-3 text-center">
+                                                        <img class="img-responsive" src="images/opinions/ejemplo2.jpeg" style="width: 100px;height:100px;">
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        <p>Tere me ayudo a tener una mejor tecnica en maquillaje, me siento mejor con eso.</p>
+                                                        <small>Adriana Solano</small>
+                                                    </div>
+                                                </div>
+                                            </blockquote>
+                                        </div>
+                                        <!-- Quote 3 -->
+                                        <div class="item">
+                                            <blockquote>
+                                                <div class="row">
+                                                    <div class="col-sm-3 text-center">
+                                                        <img class="img-responsive" src="images/opinions/ejemplo3.jpg" style="width: 100px;height:100px;">
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        <p>The amazing Style me hizo tener mejor confianza conmigo misma.</p>
+                                                        <small>Michelle Rodríguez</small>
+                                                    </div>
+                                                </div>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gap"></div>
+                      </div>
+                  </section>
+    
+                <section id="blog" class="white">
+                    <div class="container">
+                        <div class="center gap fade-down section-heading">
+                               <div class="gap"></div>
+                            <h2 class="main-title">En nuestro blog</h2>
+                            <hr>
+                        </div>
+                        <div class="gap"></div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="post">
+                                    <div class="post-img-content">
+                                        <img src="images/blog/blog1.jpg" class="img-responsive" />
+                                        <div class="overlay">
+                                            <a class="preview btn btn-outlined btn-primary" href="#"><i class="fa fa-link"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <h2 class="post-title">Guia Rapida  para skincare</h2>
+                                        <div class="author">
+                                            <i class="fa fa-user"></i> Por <b>Alejandra</b> | <i class="fa fa-clock-o"></i> <time datetime="2019-04-13">13 de abril 2019</time>
+                                        </div>
+                                        <div>
+                                                Te mostramos una guia con sencillos pasos para 
+                                                una rutina de skincare espectacular 
+                                        </div>
+                                        <div class="read-more-wrapper">
+                                            <a href="#" class="btn btn-outlined btn-primary">Leer más</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="post">
+                                    <div class="post-img-content">
+                                        <img src="images/blog/blog2.jpg" class="img-responsive" />
+                                        <div class="overlay">
+                                            <a class="preview btn btn-outlined btn-primary" href="#"><i class="fa fa-link"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <h2 class="post-title">Tendencias de maquillaje 2019</h2>
+                                        <div class="author">
+                                            <i class="fa fa-user"></i> Por <b>Fernanda</b> | <i class="fa fa-clock-o"></i> <time datetime="2019-04-11">11 de Abril 2019</time>
+                                        </div>
+                                        <div>
+                                                En este post encontraras las tendencias de consumo 
+                                                actuales en el mundo del maquillaje
+                                        </div>
+                                        <div class="read-more-wrapper">
+                                            <a href="#" class="btn btn-outlined btn-primary">Leer más</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="post">
+                                    <div class="post-img-content">
+                                        <img src="images/blog/blog3.jpg" class="img-responsive" />
+                                        <div class="overlay">
+                                            <a class="preview btn btn-outlined btn-primary" href="#"><i class="fa fa-link"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <h2 class="post-title">Como lucir espectacular este otoño</h2>
+                                        <div class="author">
+                                            <i class="fa fa-user"></i> Por <b>Paola</b> | <i class="fa fa-clock-o"></i> <time datetime="2019-06-11">11 de junio, 2019</time>
+                                        </div>
+                                        <div>
+                                                Te mostramos los ultimos looks de otoño y tecnicas para que puedas recrearlos con tu closet.
+                                        </div>
+                                        <div class="read-more-wrapper">
+                                            <a href="#" class="btn btn-outlined btn-primary">Leer más</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gap"></div>
+                    </div>
+                   </section>
+                <div id="mapwrapper">
+                    <div id="map">
+                        
+                    </div>
+                </div>
+    
+                <section id="contact" class="white">
+                    <div class="container">
+                        <div class="gap"></div>
+                        <div class="center gap fade-down section-heading">
+                            <h2 class="main-title">Ponte en contacto con nosotros</h2>
+                            <hr>
+                            <p>Nuestro trabajo es escucharte para poder darte lo que quieres.</p>
+                        </div>
+                        <div class="gap"></div>
+                        <div class="row">
+                            <div class="col-md-4 fade-up">
+                                <h3>Información de contacto</h3>
+                                <p><span class="icon icon-home"></span>Time Square, New York<br/>
+                                    <span class="icon icon-phone"></span>+36 65984 405<br/>
+                                    <span class="icon icon-mobile"></span>+36 65984 405<br/>
+                                    <span class="icon icon-envelop"></span> <a href="#">email@infinityteam.com</a> <br/>
+                                    <span class="icon icon-twitter"></span> <a href="#">@infinityteam.com</a> <br/>
+                                    <span class="icon icon-facebook"></span> <a href="#">Infinity Agency</a> <br/>
+                                </p>
+                            </div><!-- col -->
+    
+                            <div class="col-md-8 fade-up">
+                                <h3>¡Déjanos un mensaje!</h3>
+                                <div id="message"></div>
+                                <form method="post" action="sendemail.php" id="contactform">
+                                    <input type="text" name="nombre" id="name" placeholder="Nombre"/>
+                                    <input type="text" name="correo" id="email" placeholder="Correo"/>
+                                    <input type="text" name="sitioweb" id="website" placeholder="Sitio web" />
+                                    <textarea name="Comentarios" id="comments" placeholder="Comentarios"></textarea>
+                                    <input class="btn btn-outlined btn-primary" type="submit" name="submit" value="Enviar" />
+                                </form>
+                            </div><!-- col -->
+                        </div><!-- row -->
+                        <div class="gap"></div>
+                    </div>
+                </section>
+            </div>
+    
+    
+            <div id="footer-wrapper">
+                    <section id="bottom" class="">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-3 col-sm-6 about-us-widget">
+                                    <h4>Cobertura mundial</h4>
+                                    <p>Si tienes internet, podemos ayudarte.</p>
+                                </div><!--/.col-md-3-->
+                                <div class="col-md-3 col-sm-6">
+                                    <h4>Ultimos artículos</h4>
+                                    <div>
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img class="widget-img" src="images/portfolio/folio01.jpg" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <span class="media-heading"><a href="#">Guia Rapida  para skincare</a></span>
+                                                <small class="muted">Posteado 11 de Junio 2019</small>
+                                            </div>
+                                        </div>
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img class="widget-img" src="images/portfolio/folio02.jpg" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <span class="media-heading"><a href="#">Tendencias de maquillaje 2019</a></span>
+                                                <small class="muted">Posteado 11 de Abril 2019</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!--/.col-md-3-->
+                            </div>
+                        </div>
+                    </section><!--/#bottom-->
+            
+                    <footer id="footer" class="">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    &copy; 2019 The amazing style. Todos los derechos reservados. <a href="https://templatemag.com/bootstrap-templates/">Bootstrap templates</a> by TemplateMag.
+                                </div>
+                                <div class="col-sm-4">
+                                    <ul class="pull-right">
+                                        <li><a id="gototop" class="gototop" href="#"><i class="fa fa-chevron-up"></i></a></li><!--#gototop-->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </footer><!--/#footer-->
+                </div>
+            
+            
+                <script src="js/plugins.js"></script>
+                <script src="js/bootstrap.min.js"></script>
+                <script src="js/jquery.prettyPhoto.js"></script>
+                <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWDPCiH080dNCTYC-uprmLOn2mt2BMSUk&amp;sensor=true"></script>
+                <script src="js/init.js"></script>
+            </body>
+            </html>
